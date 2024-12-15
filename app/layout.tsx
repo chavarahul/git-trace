@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { DM_Sans } from 'next/font/google'
+import RetroGrid from "@/components/ui/retro-grid";
 
 export const metadata: Metadata = {
   title: "Git Trace | Detect Forks and Clones",
@@ -37,9 +38,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dmsans.className} antialiased overflow-x-clip`}
+        className={`${dmsans.className} antialiased bg-slate-200`}
       >
         {children}
+        <div className=" h-screen absolute w-full top-0 -z-10">
+        <RetroGrid />
+      </div>
       </body>
     </html>
   );
