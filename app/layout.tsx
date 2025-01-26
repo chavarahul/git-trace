@@ -41,7 +41,7 @@ export default function RootLayout({
         className={`${dmsans.className} antialiased bg-slate-200`}
       >
         {children}
-        <div className=" h-screen absolute w-full top-0 -z-10">
+        <div className="absolute w-full top-0 bottom-0 -z-10">
         <RetroGrid />
       </div>
       </body>
